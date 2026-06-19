@@ -74,6 +74,7 @@ export default {
         fontFamily: FAMILY.bold,
         fontSize: SIZE.small,
         color: COLOR.light,
+        justifyContent:'center'
     },
     forgot: {
         width: '100%',

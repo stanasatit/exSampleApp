@@ -25,7 +25,7 @@ export default {
         color: '#FFF',
         marginBottom: 3,
         marginTop: 15,
-        marginLeft: 10
+        marginLeft: 10,
     },
     profileLocation: {
         fontFamily: FAMILY.regular,

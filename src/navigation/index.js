@@ -6,6 +6,8 @@ import { navigationRef } from '../utils/navigation'
 import LoginScreen from '../screens/loginScreen';
 import RegisterScreen from '../screens/registerScreen';
 import HomeScreen from '../screens/homeScreen';
+import DataListScreen from '../screens/dataListScreen';
+//import MapScreen from '../screens/mapScreen';
 
 import Camera from '../screens/cameraScreen';
 import QrCodeScreen from '../screens/qrcodeScreen';
@@ -26,6 +28,8 @@ const NavigationController = () => {
                 <Stack.Screen name='HomeScreen' component={HomeScreen} options={options} />
                 <Stack.Screen name='Camera' component={Camera} options={options} />
                 <Stack.Screen name='QrCodeScreen' component={QrCodeScreen} options={options} />
+                <Stack.Screen name='DataListScreen' component={DataListScreen} options={options} />
+                {/* <Stack.Screen name='MapScreen' component={MapScreen} options={options} /> */}
             </Stack.Navigator>
         </NavigationContainer>
     )

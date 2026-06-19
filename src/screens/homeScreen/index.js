@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react'
-import { View, Text, BackHandler, ImageBackground, Image, TextInput, TouchableOpacity, Linking } from 'react-native'
-import { Box, Icon } from 'native-base';
+import { View, BackHandler, ImageBackground, Image, TextInput, TouchableOpacity, Linking } from 'react-native'
+import { Box, Icon, Text } from 'native-base';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 import Feather from 'react-native-vector-icons/Feather'
 import Line from '@xmartlabs/react-native-line'
@@ -68,6 +68,7 @@ const HomeScreen = () => {
                         <Image source={{ uri: pictureURL ? pictureURL : '' }} resizeMode='cover' style={styles.avatar} />
                         <View style={{ marginLeft: 5 }} >
                             <Text style={styles.profileName}>{userId}</Text>
+
                         </View>
                     </View>
                     <View style={styles.btnLayout}>
@@ -80,7 +81,7 @@ const HomeScreen = () => {
                             <Text style={styles.btnText}>{'Upload'}</Text>
                         </TouchableOpacity>
 
-                        <TouchableOpacity style={styles.btnBox} onPress={() => { }} >
+                        <TouchableOpacity style={styles.btnBox} onPress={() => { navigate('MapScreen') }} >
                             <Image source={require('@asset/images/btn-car.png')} style={styles.btnImg} />
                             <Text style={styles.btnText}>{'Map Location'}</Text>
                         </TouchableOpacity>
